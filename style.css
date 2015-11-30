@@ -1,0 +1,208 @@
+#drplist{
+	top:0px;
+	width:400px;
+	height:200px;
+	overflow-y:scroll;
+	color:grey;
+	border: 1px solid rgba(0,0,0,0.5);
+	font-family: sans-serif;
+	background:rgba(245,245,245,0.3);
+	overflow-x:hidden;
+	border-radius: 5px;
+}
+#btnlol{
+
+	width:400px;
+	line-height:30px;
+	background:White;
+	border:2px solid #2ecc71;
+	border-radius: 5px;
+	color:grey;
+	padding:5px;
+
+}
+#btnlol:focus{
+	width:400px;
+	line-height:30px;
+	background:White;
+	border:2px solid #2ecc71;
+	border-radius: 5px;
+	color:#2ecc71;
+}
+#checkall{
+background:#2ecc71;
+color:white;
+border:#2ecc71;
+border-radius:10px;
+width:150px;
+padding:10px;
+margin:5px;
+margin-bottom:15px;
+cursor:pointer;
+display:inline-block;
+font-size:12px;
+
+}
+#txtip{
+	
+	border-radius: 5px;
+	width:350px;
+	height:30px;
+	margin:15px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#selecttags
+{margin:3px;
+	padding:7px;
+	padding-right:17px;
+	padding-left:17px;
+background-color : rgba(46,204,113,0.6);
+color:white;
+font-size: 13px;
+border-radius:10px;
+}
+#paramount{
+	display:block;
+
+}
+#paramount:hover{
+	display:block;
+	cursor:pointer;
+	background:rgba(245,245,245,0.2);
+}
+
+/*!
+ * Font Awesome Controls
+ * fac.css
+ * Copyright Maxwel D'souza
+ * MIT Licence
+ */
+
+.fac {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.2em;
+    left:10px;
+}
+
+.fac label {
+    margin: 0em 1em 0em 0em;
+    padding-left: 1.5em;
+    cursor:pointer;
+    font-weight:inherit;
+}
+
+.fac > input + label:before,
+.fac > span::after {
+    font-family: FontAwesome;
+    position:absolute;
+    left:0px;
+}
+
+.fac > input + label:before { 
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+input.chb {
+    display:none; 
+}
+
+/********* Behavior ***********/
+
+.fac-checkbox > input + label:before,
+.fac-checkbox-round > input + label:before {
+    opacity: 1;
+}
+
+.fac-checkbox > input:checked + label:before,
+.fac > input:checked + label:before {
+    opacity: 0;
+}
+
+.fac-radio > input + label:before,
+.fac-checkbox-o > input + label:before,
+.fac-checkbox-round-o > input + label:before {
+    opacity: 0;
+}
+.fac-radio > input:checked + label:before,
+.fac-checkbox-o > input:checked + label:before,
+.fac-checkbox-round-o > input:checked + label:before {
+    opacity: 1;
+}
+/********* Sizes ***********/
+
+.fac-2x {
+    font-size: 2em;
+}
+
+/********* Colors ***********/
+
+.fac-default > input + label:before,
+.fac-default > span::after {
+    color: #000000;
+}
+.fac-primary > input + label:before,
+.fac-primary > span::after {
+    color: #428bca;
+}
+.fac-success > input + label:before,
+.fac-success > span::after {
+    color: #5cb85c;
+}
+.fac-info > input + label:before,
+.fac-info > span::after {
+    color: #5bc0de;
+}
+.fac-warning > input + label:before,
+.fac-warning > span::after {
+    color: #f0ad4e;
+}
+.fac-danger > input + label:before,
+.fac-danger > span::after {
+    color: #d9534f;
+}
+
+/********* Controls ***********/
+
+.fac-checkbox > span::after {
+    content: "\f14a"; /* checked */
+}
+.fac-checkbox > input[type=checkbox] + label:before { 
+    content: "\f0c8";
+}
+
+.fac-checkbox-round > span::after {
+    content: "\f058";
+}
+.fac-checkbox-round > input[type=checkbox] + label:before {  
+    content: "\f111";
+}
+
+.fac-checkbox-o > span::after {
+    content: "\f096";  
+}
+.fac-checkbox-o > input[type=checkbox] + label:before {  
+    content: "\f046";
+}
+
+.fac-checkbox-round-o > span::after {
+    content: "\f10c";  
+}
+.fac-checkbox-round-o > input[type=checkbox] + label:before {  
+    content: "\f05d";
+}
+
+.fac-radio > span::after {
+    content: "\f10c";
+}
+.fac-radio > input[type=radio] + label:before { 
+    content: "\f192";
+} 
