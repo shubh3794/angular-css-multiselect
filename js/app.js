@@ -27,6 +27,10 @@ var app=angular.module('mulsel' , ["checklist-model"]);
 	    	zones:[]
   		};
 
+      $scope.hidedrop = function(){
+        $scope.count = -1;
+      }
+
   		//check all options
   		 $scope.checkAll = function() {
    			 temps = angular.copy($scope.areas);
@@ -49,3 +53,27 @@ var app=angular.module('mulsel' , ["checklist-model"]);
   			};
 
 }]);
+
+app.directive('clickAnywhereButHere', function($document) {
+  return {
+    restrict : 'A',
+    link : function(scope, elem, attr, ctrl) {
+
+      elem.bind('click', function(e) {
+        // this part keeps it from firing the click on the document.
+        e.stopPropagation();
+      });
+      $document.bind('click', function() {
+        // magic here.
+        scope.$apply(attr.clickAnywhereButHere);
+      });
+      
+      $(document).keyup(function(event) {
+          if(event.which === 27) {
+            // magic here.
+          scope.$apply(attr.clickAnywhereButHere);
+          }
+      });
+    }
+  };
+});
