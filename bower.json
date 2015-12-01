@@ -1,0 +1,19 @@
+{
+  "name": "shubham",
+  "version": "0.0.0",
+  "homepage": "https://github.com/shubh3794/angular-css-multiselect",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "angular"
+  ],
+  "authors": [
+    "shubham"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.8",
+    "bootstrap": "~3.3.6"
+  }
+}
